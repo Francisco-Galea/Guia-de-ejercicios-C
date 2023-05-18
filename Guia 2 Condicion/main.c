@@ -5,8 +5,7 @@ int main()
 {
 
 /*
-1) Escribir un programa C que ordene y muestre de menor a mayor, dos variables
-enteras distintas, cuyos contenidos son ingresados por teclado.
+1) 
 
 #include <stdio.h>
 
@@ -34,7 +33,7 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-2) Modificar el ejercicio n�mero uno de manera que contenga tres variables
+2) 
 
 #include <stdio.h>
 
@@ -77,8 +76,7 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-3) Escribir un programa C que determine si un n�mero natural es par o impar.
-Suponer que el valor ingresado es entero y positivo
+3)
 
 #include <stdio.h>
 
@@ -100,33 +98,8 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-4) Para el siguiente programa C:
- ��������
-int a,b;
- printf(�\nIngrese un numero entero\n�);
- scanf(�%d�,&a);
- printf(�\nIngrese otro n�mero entero\n�);
- scanf(�%d�,&b);
- printf(�\n�);
- if (a>b) {
- printf(�%d %d� es mayor que�,a,b);}
- else
- if (a<b) {
- printf(�%d %d�,��es mayor que�,b,a);}
- else {
- printf(�%d , %d�,��es igual a�,a,b);}
- printf(�\n�);
-system(�pause�);
-�������..
-A - Explique que hace este programa y escr�balo como un comentario.
-B - Comp�relo con el programa obtenido en el ejercicio 1 �Cu�l es la diferencia?
-C - �Qu� pasa si se ingresan n�meros reales o caracteres en lugar de enteros?
-D - Modificar el programa para que escriba siempre el n�mero a en todas las
-salidas.
-E - Modificarlo para que solo decida si a = b o a != b.
+4) 
 
-
-Respuestas
 A) El programa solicita al usuario que ingrese dos n�meros enteros. Luego, compara los valores de los n�meros utilizando una estructura condicional ('if') y muestra un mensaje indicando cu�l de los dos n�meros es mayor o si son iguales. Finalmente, el programa pausa su ejecuci�n para que el resultado pueda ser visualizado antes de finalizar.
 
 int a, b;
@@ -186,12 +159,45 @@ system("pause");
 /**********************************************************************************************************************************************/
 
 /*
-5) Ingresar el nombre, Nro. de Libreta de un alumno y tres notas correspondientes
-a los parciales de una materia, calcular el promedio e imprimir el nombre, nro. de
-libreta y condici�n del alumno, considerando:
-�APROBADO� con un promedio mayor o igual a 6.
-�SOBRESALIENTE� si es igual o superior a 9.
-�DESAPROBADO� en cualquier otro caso.
+5)
+
+int main(){
+	
+	float X=0,resultadoTramo1=0,resultadoTramo2=0;
+	
+printf("La funcion por tramos es esta: \n5*X+2");
+printf("\nEvalue X para esta primera funcion. X debe ser menor o igual que 3:");
+fflush(stdin);
+scanf("%f",&X);	
+if(X<=3){ 
+	//if 1
+	resultadoTramo1=5*X+2;
+
+printf("La segunda funcion por tramos es esta: \n4*X-5");
+printf("\nReevalue X para esta funcion. X debe ser mayor a 3:");
+fflush(stdin);
+scanf("%f",&X);	
+	if(X>3){ 
+		//if 2
+		resultadoTramo2=4*X-5;
+		printf("El resultado de las funciones son:\nFuncion Tramo1:%.2f\n_______\nFuncion Tramo2:%.2f",resultadoTramo1,resultadoTramo2);	
+		   }		
+		else{
+			//else 2
+			printf("El valor ingresado no es MAYOR que 3");	
+	   }	
+else{
+	//else 1
+	printf("El valor ingresado no es MENOR o Igual a 3");	
+	}
+
+	return 0;
+}
+
+/**********************************************************************************************************************************************/
+
+/*
+6) 
 
 #include <stdio.h>
 
@@ -238,9 +244,7 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-6) Dadas las componentes de un punto en el plano, determinar a qu� cuadrante
-corresponde teniendo en cuenta que se pueden encontrar sobre los ejes o en el
-origen.
+7) 
 
 #include <stdio.h>
 
@@ -277,28 +281,37 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-7) Reescribir el siguiente programa utilizando la sentencia SWITCH y BREAK sin
-alterar sus salidas.
-���.
-#define x 2
-#define y 3
-#define z 4
-����
-int m;
- scanf(�%d�,&m);
-If (m==x) {
- printf(�El valor de %d es igual a %d�,m,x);}
-else
- If (m==y) {
- printf(�El valor de %d es igual a %d�,m,y);}
- else
- If (m==z) {
- printf(�El valor de %d es igual a %d� ,m,z);}
- else
- printf(�El valor de %d no coincide con ninguno de los ingresados�,m);
+8) 
+
+int main(){
+
+	int a=0;
+scanf("%d",&a);
+	if (a / 2 == 0) {
+ 	printf("%d es m�ltiplo de %d",a);
+ 
+ 		if (a / 3 == 0) { 
+ 		printf("y tambi�n de%d \n");
+ 		printf("por lo tanto lo es de%d \n");
+ 						}
+ 		else {
+ 		printf("pero no de %d \n");
+ 			}
+ }
+			else
+ 				if (a / 3 == 0) { 
+ 				printf("%d es multiplo de %d pero no de %d", a);
+				 }
+ 				else {
+ 				printf("%d no es m�ltiplo de %d ni de %d", a);
+ 					}	
+	return 0;
 }
 
-Respuesta
+/**********************************************************************************************************************************************/
+
+/*
+9) 
 
 #include <stdio.h>
 
@@ -335,12 +348,7 @@ El programa reescrito tiene la misma salida que el programa original, pero utili
 /**********************************************************************************************************************************************/
 
 /*
-8) Decidir a cuales de las siguientes situaciones se puede aplicar la sentencia
-SWITCH y escribir para dichos casos los programas correspondientes.
-� Ingresar las componentes reales e imaginarias de los n�meros complejos y
-luego, ingresando uno de los s�mbolos +,-,* o /, elegir la operaci�n que se
-desea realizar.
-� Modificar el caso anterior eligiendo la opci�n con S o s, R o r, M o m y D o d.
+10) 
 
 La sentencia switch en C se utiliza para tomar decisiones basadas en el valor de una variable. Sin embargo, tiene ciertas limitaciones en cuanto a los tipos de datos que puede evaluar.
 En el primer caso, en el que se ingresan componentes reales e imaginarias de n�meros complejos y se desea seleccionar una operaci�n utilizando los s�mbolos +, -, * o /, la sentencia switch no es adecuada. Esto se debe a que la sentencia switch en C solo puede evaluar tipos de datos enteros (int o char).
@@ -459,12 +467,7 @@ En este caso, se utiliza la sentencia switch para evaluar el valor de la variabl
 /**********************************************************************************************************************************************/
 
 /*
-9) Leer una variable real PESO, e informar el estado de la persona de acuerdo con
-la siguiente tabla:
-Peso < 40 �DELGADA�
-40<= Peso < 60 �NORMAL�
-60 <= Peso < 80 �SOBREPESO�
-80 <= Peso �OBESA�
+11) 
 
 #include <stdio.h>
 
@@ -490,4 +493,95 @@ int main() {
 El programa lee el valor del peso ingresado por el usuario y luego utiliza una estructura de if-else para evaluar el peso y mostrar el estado correspondiente. Si el peso es menor que 40, se muestra "DELGADA". Si el peso es mayor o igual a 40 y menor que 60, se muestra "NORMAL". Si el peso es mayor o igual a 60 y menor que 80, se muestra "SOBREPESO". Y si el peso es mayor o igual a 80, se muestra "OBESA".
 
 
+}
+
+/**********************************************************************************************************************************************/
+
+/*
+12)
+
+int main(){
+	
+	int opc;
+	float pulsos=0,cantidadPagar=0;
+
+printf("Seleccione su tipo de abono.\n");
+printf("1)Particular.\n");
+printf("2)Profesional.\n");
+printf("3)Comercial.\n");
+fflush(stdin);
+scanf("%i",&opc);	
+	
+switch(opc){
+
+	case 1:printf("Usted eligio Particular, ahora ingrese la cantidad de pulsos:");
+			fflush(stdin);
+			scanf("%f",&pulsos);
+			if(pulsos>0 && pulsos<=200){
+				cantidadPagar=pulsos*0.05+30;
+			}
+			else
+				if(pulsos>201 && pulsos<=400){
+					cantidadPagar=pulsos*0.07+30;
+				}	
+				else
+					if(pulsos>401 && pulsos<=1000){
+						cantidadPagar=pulsos*0.1+30;
+					}
+					else
+						if(pulsos>1000){
+							cantidadPagar=pulsos*0.12+30;
+						}
+			printf("Usted como Particular, le corresponde pagar %.2f",cantidadPagar);			
+			break;
+	
+	case 2:printf("Usted eligio Profesinal, ahora ingrese la cantidad de pulsos:");
+			fflush(stdin);
+			scanf("%f",&pulsos);
+			if(pulsos>0 && pulsos<=250){
+				cantidadPagar=pulsos*0.07+50;
+			}
+			else
+				if(pulsos>251 && pulsos<=500){
+					cantidadPagar=pulsos*0.11+50;
+				}	
+				else
+					if(pulsos>501 && pulsos<=1000){
+						cantidadPagar=pulsos*0.13+50;
+					}
+					else
+						if(pulsos>1000){
+							cantidadPagar=pulsos*0.15+50;
+						}
+			printf("Usted como Profesional, le corresponde pagar %.2f",cantidadPagar);			
+			break;					
+
+	case 3:printf("Usted eligio Comercial, ahora ingrese la cantidad de pulsos:");
+			fflush(stdin);
+			scanf("%f",&pulsos);
+			if(pulsos>0 && pulsos<=300){
+				cantidadPagar=pulsos*0.09+70;
+			}
+			else
+				if(pulsos>301 && pulsos<=600){
+					cantidadPagar=pulsos*0.12+70;
+				}	
+				else
+					if(pulsos>601 && pulsos<=1000){
+						cantidadPagar=pulsos*0.15+70;
+					}
+					else
+						if(pulsos>1000){
+							cantidadPagar=pulsos*0.17+70;
+						}
+			printf("Usted como Comercial, le corresponde pagar %.2f",cantidadPagar);				
+			break;			
+	
+	default:printf("La opcion ingresada no coincide con ninguna de las opciones, intentelo de nuevo.");		
+}	
+		
+	return 0;
+}
+
+*/
 }
