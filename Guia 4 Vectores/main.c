@@ -6,12 +6,12 @@ int main()
 
 /*
 1) Sea B un arreglo de elementos enteros. Desarrollar un programa en C que permita
-mediante el uso de un menú, seleccionar una de las siguientes opciones:
-• Asignar el valor (9) a todos los elementos de subíndice impar e imprimir el
+mediante el uso de un menï¿½, seleccionar una de las siguientes opciones:
+ï¿½ Asignar el valor (9) a todos los elementos de subï¿½ndice impar e imprimir el
 arreglo modificado
-• Calcular la suma de todos los elementos del arreglo e imprimirla
-• Construir un arreglo C tal que sea B permutado (C[0]=A[N], C[1]=A[N-1],… )
-• Imprimir los elementos pares del vector B
+ï¿½ Calcular la suma de todos los elementos del arreglo e imprimirla
+ï¿½ Construir un arreglo C tal que sea B permutado (C[0]=A[N], C[1]=A[N-1],ï¿½ )
+ï¿½ Imprimir los elementos pares del vector B
 
 #include <stdio.h>
 
@@ -20,13 +20,13 @@ int main() {
     int opcion;
 
     do {
-        printf("Seleccione una opción:\n");
-        printf("1. Asignar el valor (9) a los elementos de subíndice impar e imprimir el arreglo modificado\n");
+        printf("Seleccione una opciï¿½n:\n");
+        printf("1. Asignar el valor (9) a los elementos de subï¿½ndice impar e imprimir el arreglo modificado\n");
         printf("2. Calcular la suma de todos los elementos del arreglo e imprimirla\n");
         printf("3. Construir un arreglo C permutado de B e imprimirlo\n");
         printf("4. Imprimir los elementos pares del vector B\n");
         printf("5. Salir\n");
-        printf("Opción: ");
+        printf("Opciï¿½n: ");
         scanf("%d", &opcion);
 
         switch (opcion) {
@@ -73,7 +73,7 @@ int main() {
                 printf("Saliendo del programa...\n");
                 break;
             default:
-                printf("Opción inválida. Intente nuevamente.\n");
+                printf("Opciï¿½n invï¿½lida. Intente nuevamente.\n");
                 break;
         }
 
@@ -83,14 +83,14 @@ int main() {
     return 0;
 }
 
-Este programa utiliza un arreglo B predefinido de 10 elementos para realizar las operaciones seleccionadas a través de un menú. Permite asignar el valor 9 a los elementos de subíndice impar, calcular la suma de los elementos, construir un arreglo C permutado de B y imprimir los elementos pares del vector B. El programa continuará mostrando el menú hasta que se seleccione la opción de salida.
+Este programa utiliza un arreglo B predefinido de 10 elementos para realizar las operaciones seleccionadas a travï¿½s de un menï¿½. Permite asignar el valor 9 a los elementos de subï¿½ndice impar, calcular la suma de los elementos, construir un arreglo C permutado de B y imprimir los elementos pares del vector B. El programa continuarï¿½ mostrando el menï¿½ hasta que se seleccione la opciï¿½n de salida.
 
 /**********************************************************************************************************************************************/
 
 /*
 2) Se ingresan: un entero N, un vector V de N elementos float y un valor float K. Se pide
 escribir un programa que permita recorrer el vector, verificando si se encuentra el
-valor K e imprima la cantidad de ocurrencias o el cartel “NO ESTA” en caso de no
+valor K e imprima la cantidad de ocurrencias o el cartel ï¿½NO ESTAï¿½ en caso de no
 hallarlo
 
 #include <stdio.h>
@@ -127,21 +127,21 @@ int main() {
     return 0;
 }
 
-Este programa lee la cantidad de elementos N del vector V y luego solicita al usuario que ingrese los valores de cada elemento. Luego se lee el valor K a buscar. Después, se recorre el vector para contar las ocurrencias del valor K. Si se encuentran ocurrencias, se imprime la cantidad de ocurrencias. De lo contrario, se muestra el mensaje "NO ESTA".
+Este programa lee la cantidad de elementos N del vector V y luego solicita al usuario que ingrese los valores de cada elemento. Luego se lee el valor K a buscar. Despuï¿½s, se recorre el vector para contar las ocurrencias del valor K. Si se encuentran ocurrencias, se imprime la cantidad de ocurrencias. De lo contrario, se muestra el mensaje "NO ESTA".
 
 /**********************************************************************************************************************************************/
 
 /*
 3) Dados los siguientes problemas, realizar los programas correspondientes:
 
-• A) Dado un arreglo A, generar un nuevo arreglo B, eliminando del arreglo A los
+ï¿½ A) Dado un arreglo A, generar un nuevo arreglo B, eliminando del arreglo A los
 elementos que sean iguales a K.(K valor ingresado previamente).
 
-• B) Dado un arreglo A de N componentes float, crear dos nuevos vectores B y C tales
+ï¿½ B) Dado un arreglo A de N componentes float, crear dos nuevos vectores B y C tales
 que: B, tenga solo las componentes de A que ocupan lugar par y C solo las
 componentes de A que ocupan lugar impar. Imprimir los tres vectores.
 
-• C) Calcular la suma de los valores negativos y el producto de los valores positivos
+ï¿½ C) Calcular la suma de los valores negativos y el producto de los valores positivos
 distintos de cero de un vector A de N componentes enteras.
 
 
@@ -263,15 +263,15 @@ int main() {
 
 /*
 4) En una competencia de ciclismo, cada participante realiza dos pruebas, una por
-tiempo y otra por número de vueltas. Se tienen almacenados en tres arreglos los
+tiempo y otra por nï¿½mero de vueltas. Se tienen almacenados en tres arreglos los
 siguientes datos de cada participante:
 - Nombre
 - Tiempo en la primera prueba
 - Numero de vueltas en la segunda prueba.
 Realizar un programa que permita obtener:
-• El nombre del participante que hizo el menor tiempo en la primera prueba.
-• El nombre y el tiempo en la primera prueba del participante que hizo el mayor
-número de vueltas en la segunda prueba
+ï¿½ El nombre del participante que hizo el menor tiempo en la primera prueba.
+ï¿½ El nombre y el tiempo en la primera prueba del participante que hizo el mayor
+nï¿½mero de vueltas en la segunda prueba
 
 #include <stdio.h>
 #include <string.h>
@@ -284,7 +284,7 @@ int main() {
     int vueltas[MAX_PARTICIPANTS];
     int numParticipantes;
 
-    printf("Ingrese el número de participantes: ");
+    printf("Ingrese el nï¿½mero de participantes: ");
     scanf("%d", &numParticipantes);
 
     // Inicializar los arreglos
@@ -295,7 +295,7 @@ int main() {
         printf("Ingrese el tiempo en la primera prueba del participante %d: ", i + 1);
         scanf("%f", &tiempos[i]);
 
-        printf("Ingrese el número de vueltas en la segunda prueba del participante %d: ", i + 1);
+        printf("Ingrese el nï¿½mero de vueltas en la segunda prueba del participante %d: ", i + 1);
         scanf("%d", &vueltas[i]);
     }
 
@@ -312,7 +312,7 @@ int main() {
 
     printf("El participante con el menor tiempo en la primera prueba es: %s\n", nombres[indiceMenorTiempo]);
 
-    // Obtener el participante con el mayor número de vueltas en la segunda prueba
+    // Obtener el participante con el mayor nï¿½mero de vueltas en la segunda prueba
     int indiceMayorVueltas = 0;
     int mayorVueltas = vueltas[0];
 
@@ -323,26 +323,26 @@ int main() {
         }
     }
 
-    printf("El participante con el mayor número de vueltas en la segunda prueba es: %s\n", nombres[indiceMayorVueltas]);
+    printf("El participante con el mayor nï¿½mero de vueltas en la segunda prueba es: %s\n", nombres[indiceMayorVueltas]);
     printf("Tiempo en la primera prueba: %.2f\n", tiempos[indiceMayorVueltas]);
 
     return 0;
 }
 
-Este programa te permitirá ingresar los datos de los participantes, y luego calculará el nombre del participante con el menor tiempo en la primera prueba, así como el nombre y tiempo en la primera prueba del participante que hizo el mayor número de vueltas en la segunda prueba.
+Este programa te permitirï¿½ ingresar los datos de los participantes, y luego calcularï¿½ el nombre del participante con el menor tiempo en la primera prueba, asï¿½ como el nombre y tiempo en la primera prueba del participante que hizo el mayor nï¿½mero de vueltas en la segunda prueba.
 
 /**********************************************************************************************************************************************/
 
 /*
-5) En un comercio se registran las ventas por cada uno de los siete días de la semana,
+5) En un comercio se registran las ventas por cada uno de los siete dï¿½as de la semana,
 de la siguiente forma: en CAJA1 se indica el dinero que ingreso en efectivo y en
-CAJA2 el monto facturado en tarjetas de crédito.
+CAJA2 el monto facturado en tarjetas de crï¿½dito.
 Al final de la semana se desea determinar:
 
-• El total de las ventas
-• Cual fue el día que ingreso menos efectivo
-• El día que más se facturo, porcentaje facturado en efectivo y porcentaje
-facturado en tarjetas de crédito
+ï¿½ El total de las ventas
+ï¿½ Cual fue el dï¿½a que ingreso menos efectivo
+ï¿½ El dï¿½a que mï¿½s se facturo, porcentaje facturado en efectivo y porcentaje
+facturado en tarjetas de crï¿½dito
 
 #include <stdio.h>
 
@@ -358,46 +358,91 @@ int main() {
     float mayorFacturacion = 0;
     float porcentajeEfectivo, porcentajeTarjeta;
 
-    // Ingresar las ventas de cada día
+    // Ingresar las ventas de cada dï¿½a
     for (int i = 0; i < NUM_DIAS; i++) {
-        printf("Ingrese el monto en efectivo para el día %d: ", i + 1);
+        printf("Ingrese el monto en efectivo para el dï¿½a %d: ", i + 1);
         scanf("%f", &caja1[i]);
 
-        printf("Ingrese el monto facturado en tarjetas de crédito para el día %d: ", i + 1);
+        printf("Ingrese el monto facturado en tarjetas de crï¿½dito para el dï¿½a %d: ", i + 1);
         scanf("%f", &caja2[i]);
 
         totalVentas += caja1[i] + caja2[i];
 
-        // Determinar el día con menor efectivo
+        // Determinar el dï¿½a con menor efectivo
         if (i == 0 || caja1[i] < menorEfectivo) {
             diaMenorEfectivo = i;
             menorEfectivo = caja1[i];
         }
 
-        // Determinar el día con mayor facturación
+        // Determinar el dï¿½a con mayor facturaciï¿½n
         if (i == 0 || (caja1[i] + caja2[i]) > mayorFacturacion) {
             diaMayorFacturacion = i;
             mayorFacturacion = caja1[i] + caja2[i];
         }
     }
 
-    // Calcular porcentajes de facturación en efectivo y tarjetas de crédito
+    // Calcular porcentajes de facturaciï¿½n en efectivo y tarjetas de crï¿½dito
     porcentajeEfectivo = (caja1[diaMayorFacturacion] / mayorFacturacion) * 100;
     porcentajeTarjeta = (caja2[diaMayorFacturacion] / mayorFacturacion) * 100;
 
     printf("El total de las ventas de la semana es: %.2f\n", totalVentas);
-    printf("El día que ingresó menos efectivo fue el día %d\n", diaMenorEfectivo + 1);
-    printf("El día que más se facturó fue el día %d\n", diaMayorFacturacion + 1);
+    printf("El dï¿½a que ingresï¿½ menos efectivo fue el dï¿½a %d\n", diaMenorEfectivo + 1);
+    printf("El dï¿½a que mï¿½s se facturï¿½ fue el dï¿½a %d\n", diaMayorFacturacion + 1);
     printf("Porcentaje facturado en efectivo: %.2f%%\n", porcentajeEfectivo);
-    printf("Porcentaje facturado en tarjetas de crédito: %.2f%%\n", porcentajeTarjeta);
+    printf("Porcentaje facturado en tarjetas de crï¿½dito: %.2f%%\n", porcentajeTarjeta);
 
     return 0;
 }
 
-Este programa te permitirá ingresar las ventas de cada día de la semana, calcular el total de las ventas, determinar el día que ingresó menos efectivo, encontrar el día que más se facturó y calcular el porcentaje facturado en efectivo y tarjetas de crédito para ese día.
+Este programa te permitirï¿½ ingresar las ventas de cada dï¿½a de la semana, calcular el total de las ventas, determinar el dï¿½a que ingresï¿½ menos efectivo, encontrar el dï¿½a que mï¿½s se facturï¿½ y calcular el porcentaje facturado en efectivo y tarjetas de crï¿½dito para ese dï¿½a.
 
 
 /**********************************************************************************************************************************************/
+
+/*
+6) 
+int main(){
+	
+		int N=0,i=0,posicionMasCaro=0;
+		
+printf("ï¿½Cuantos productos desea ingresar?");
+fflush(stdin);
+scanf("%i",&N);	
+	
+	char Producto[N][30];
+	float Precio[N],promedioPrecio=0,prodMasCaro=0;
+	
+for(i=0;i<N;i++){
+	printf("Ingrese el nombre del producto %i:",i+1);
+	fflush(stdin);
+	scanf("%s",&Producto[i]);
+	printf("Ingrese el precio del producto %s:",Producto[i]);
+	fflush(stdin);
+	scanf("%f",&Precio[i]);
+}	
+
+for(i=0;i<N;i++){
+	printf("\nProducto: %s \nPrecio: $%.2f",Producto[i],Precio[i]);
+}
+
+for(i=0;i<N;i++){
+	promedioPrecio+=Precio[i];
+}
+promedioPrecio=promedioPrecio/N;
+printf("\nEl promedio de los precios es: $%.2f",promedioPrecio);
+
+for(i=0;i<N;i++){
+	if(Precio[i]>prodMasCaro){
+		prodMasCaro=Precio[i];
+		posicionMasCaro=i;
+	}
+}
+printf("\nEl producto mas caro es: %s y su precio es de: $%.2f",Producto[posicionMasCaro],Precio[posicionMasCaro]);
+	
+	return 0;
+}
+
+
 
 
 }
