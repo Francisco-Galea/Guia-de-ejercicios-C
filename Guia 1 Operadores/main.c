@@ -4,60 +4,55 @@
 int main()
 {
 
-/*1) ¿Cuál de los siguientes identificadores son válidos?
-a) _MiVariable
-b) switch
-c) Registro1
-d) 1Registro
-e) M&m
-f) @nombre
-g) Do 15
-h) 92
-i) Nombre_y_Apellidos
-j) Saldo_Actual
-k) BBBBBBBB
-l) * 143Edad
+/*1) 
 
-a) _MiVariable: Válido. Los identificadores pueden comenzar con un guión bajo.
+a) _MiVariable: Vï¿½lido. Los identificadores pueden comenzar con un guiï¿½n bajo.
 
-b) switch: Inválido. "switch" es una palabra reservada en C y no puede usarse como identificador.
+b) switch: Invï¿½lido. "switch" es una palabra reservada en C y no puede usarse como identificador.
 
-c) Registro1: Válido. Los identificadores pueden contener letras y números, pero no pueden comenzar con un número.
+c) Registro1: Vï¿½lido. Los identificadores pueden contener letras y nï¿½meros, pero no pueden comenzar con un nï¿½mero.
 
-d) 1Registro: Inválido. Los identificadores no pueden comenzar con un número.
+d) 1Registro: Invï¿½lido. Los identificadores no pueden comenzar con un nï¿½mero.
 
-e) M&m: Inválido. Los identificadores no pueden contener caracteres especiales como "&".
+e) M&m: Invï¿½lido. Los identificadores no pueden contener caracteres especiales como "&".
 
-f) @nombre: Inválido. Los identificadores no pueden comenzar con un símbolo como "@".
+f) @nombre: Invï¿½lido. Los identificadores no pueden comenzar con un sï¿½mbolo como "@".
 
-g) Do 15: Inválido. Los identificadores no pueden contener espacios.
+g) Do 15: Invï¿½lido. Los identificadores no pueden contener espacios.
 
-h) 92: Inválido. Los identificadores no pueden consistir únicamente en números.
+h) 92: Invï¿½lido. Los identificadores no pueden consistir ï¿½nicamente en nï¿½meros.
 
-i) Nombre_y_Apellidos: Válido. Los identificadores pueden contener guiones bajos.
+i) Nombre_y_Apellidos: Vï¿½lido. Los identificadores pueden contener guiones bajos.
 
-j) Saldo_Actual: Válido. Los identificadores pueden contener guiones bajos.
+j) Saldo_Actual: Vï¿½lido. Los identificadores pueden contener guiones bajos.
 
-k) BBBBBBBB: Válido. Los identificadores pueden consistir en letras.
+k) BBBBBBBB: Vï¿½lido. Los identificadores pueden consistir en letras.
 
-l) * 143Edad: Inválido. Los identificadores no pueden contener caracteres especiales como "*".
+l) * 143Edad: Invï¿½lido. Los identificadores no pueden contener caracteres especiales como "*".
 
 
 /**********************************************************************************************************************************************/
 
 /*
-2) Dada la siguiente secuencia de programa, indicar sus salidas: …………….
- int a=10,b=20;
- char c=120,d='G';
- printf("\t\n%d\n",a);
- printf("\t%d\n",b);
- printf("\n%c\n",c);
- printf("\n\t%d\n",c);
- printf("\t%c\n",d);
- printf("\t\nSu valor es….%d\n",d);
+2) 
+int main() {
+	
+	printf("(x+y)/(x-y) \n");
+	printf("[(a+b)^2]^2 \n");
+	printf("(a+b)*(c/d) \n");
+	printf("(x*y)/(1-4Z*x) \n");
+	printf("[(x+(y/z))/(x-(y/z))] \n");
+		
+		return 0;
+}
 
 
-La salida del programa sería:
+/**********************************************************************************************************************************************/
+
+/*
+3)
+
+La salida del programa serï¿½a:
 
 10
 20
@@ -66,25 +61,38 @@ x
 G
 Su valor es....71
 
-Explicación:
+Explicaciï¿½n:
 
-La primera instrucción printf("\t\n%d\n",a); muestra el valor de la variable a, que es 10.
-La segunda instrucción printf("\t%d\n",b); muestra el valor de la variable b, que es 20.
-La tercera instrucción printf("\n%c\n",c); muestra el carácter correspondiente al valor de la variable c, que es 'x' (el código ASCII 120 corresponde al carácter 'x').
-La cuarta instrucción printf("\n\t%d\n",c); muestra el valor numérico de la variable c, que es 120.
-La quinta instrucción printf("\t%c\n",d); muestra el valor de la variable d, que es 'G'.
-La sexta instrucción printf("\t\nSu valor es....%d\n",d); muestra el valor numérico correspondiente al carácter 'G', que es 71 según el código ASCII.
+La primera instrucciï¿½n printf("\t\n%d\n",a); muestra el valor de la variable a, que es 10.
+La segunda instrucciï¿½n printf("\t%d\n",b); muestra el valor de la variable b, que es 20.
+La tercera instrucciï¿½n printf("\n%c\n",c); muestra el carï¿½cter correspondiente al valor de la variable c, que es 'x' (el cï¿½digo ASCII 120 corresponde al carï¿½cter 'x').
+La cuarta instrucciï¿½n printf("\n\t%d\n",c); muestra el valor numï¿½rico de la variable c, que es 120.
+La quinta instrucciï¿½n printf("\t%c\n",d); muestra el valor de la variable d, que es 'G'.
+La sexta instrucciï¿½n printf("\t\nSu valor es....%d\n",d); muestra el valor numï¿½rico correspondiente al carï¿½cter 'G', que es 71 segï¿½n el cï¿½digo ASCII.
 
 
 
 /**********************************************************************************************************************************************/
 
 /*
-3) Escribir un programa que convierta un número dado en segundos en su equivalente en Horas,
-Minutos y Segundos.
-Ejemplo: Segundos=4000, el programa muestra 1H: 6M: 40S.
+4)
 
-#include <stdio.h>
+int main(){
+	
+	a=11
+	b=4
+	c=
+	d=15
+	e=7
+	x=10/3
+	y=11/4
+	return 0;
+}	
+
+/**********************************************************************************************************************************************/
+
+/*
+5) 
 
 int main() {
     int segundos, horas, minutos, segundos_restantes;
@@ -93,9 +101,9 @@ int main() {
     scanf("%d", &segundos);
 
     horas = segundos / 3600; // Divide los segundos por 3600 para obtener las horas
-    segundos_restantes = segundos % 3600; // Calcula los segundos restantes después de obtener las horas
+    segundos_restantes = segundos % 3600; // Calcula los segundos restantes despuï¿½s de obtener las horas
     minutos = segundos_restantes / 60; // Divide los segundos restantes por 60 para obtener los minutos
-    segundos_restantes = segundos_restantes % 60; // Calcula los segundos restantes después de obtener los minutos
+    segundos_restantes = segundos_restantes % 60; // Calcula los segundos restantes despuï¿½s de obtener los minutos
 
     printf("Equivalente: %dH : %dM : %dS\n", horas, minutos, segundos_restantes);
 
@@ -105,12 +113,7 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-4) Escribir un programa para convertir una medida dada en pies a sus equivalentes en: Yardas,
-Pulgadas, Centímetros, Metros.
-1 pie = 12 pulgadas, 1 yarda = 3 pies, 1 pulgada = 2,54 Cm
-Leer el número de pies e imprimir el número de yardas, pulgadas, centímetros y metros.
-
-#include <stdio.h>
+6) 
 
 int main() {
     float pies, yardas, pulgadas, centimetros, metros;
@@ -120,13 +123,13 @@ int main() {
 
     yardas = pies / 3.0; // Convierte pies a yardas dividiendo por 3
     pulgadas = pies * 12.0; // Convierte pies a pulgadas multiplicando por 12
-    centimetros = pulgadas * 2.54; // Convierte pulgadas a centímetros multiplicando por 2.54
-    metros = centimetros / 100.0; // Convierte centímetros a metros dividiendo por 100
+    centimetros = pulgadas * 2.54; // Convierte pulgadas a centï¿½metros multiplicando por 2.54
+    metros = centimetros / 100.0; // Convierte centï¿½metros a metros dividiendo por 100
 
     printf("Equivalente:\n");
     printf("Yardas: %.2f\n", yardas);
     printf("Pulgadas: %.2f\n", pulgadas);
-    printf("Centímetros: %.2f\n", centimetros);
+    printf("Centï¿½metros: %.2f\n", centimetros);
     printf("Metros: %.2f\n", metros);
 
     return 0;
@@ -135,12 +138,7 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-5) Un valor de temperatura en grados Celsius puede ser convertida a su equivalente en grados
-Fahrenheit.
-Escribir un programa en lenguaje C que lea una temperatura en grados Celsius como valor
-decimal y obtenga la temperatura Fahrenheit equivalente
-
-#include <stdio.h>
+7)
 
 int main() {
     float celsius, fahrenheit;
@@ -148,7 +146,7 @@ int main() {
     printf("Ingrese la temperatura en grados Celsius: ");
     scanf("%f", &celsius);
 
-    fahrenheit = (celsius * 9 / 5) + 32; // Convierte Celsius a Fahrenheit utilizando la fórmula
+    fahrenheit = (celsius * 9 / 5) + 32; // Convierte Celsius a Fahrenheit utilizando la fï¿½rmula
 
     printf("Temperatura en grados Fahrenheit: %.2f\n", fahrenheit);
 
@@ -158,22 +156,13 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-6) Escribir un programa que dibuje el rectángulo siguiente
- ********************
- *                  *
- *                  *
- *                  *
- ********************
-
- Respuesta: No es la forma mas clara, pero considero que es la mejor
-
- #include <stdio.h>
+8) 
 
 int main() {
-    int altura = 5; // Altura del rectángulo
-    int anchura = 20; // Anchura del rectángulo
+    int altura = 5; // Altura del rectï¿½ngulo
+    int anchura = 20; // Anchura del rectï¿½ngulo
 
-    // Dibujo del rectángulo
+    // Dibujo del rectï¿½ngulo
     for (int i = 0; i < altura; i++) {
         for (int j = 0; j < anchura; j++) {
             if (i == 0 || i == altura - 1 || j == 0 || j == anchura - 1)
@@ -190,16 +179,12 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-7) Modificar el programa anterior de modo que lea una palabra de 5 letras y se imprima en el
-centro del rectángulo
-
-#include <stdio.h>
-#include <string.h>
+9) 
 
 int main() {
-    int altura = 5; // Altura del rectángulo
-    int anchura = 20; // Anchura del rectángulo
-    char palabra[6]; // Palabra a imprimir en el centro del rectángulo
+    int altura = 5; // Altura del rectï¿½ngulo
+    int anchura = 20; // Anchura del rectï¿½ngulo
+    char palabra[6]; // Palabra a imprimir en el centro del rectï¿½ngulo
 
     printf("Ingrese una palabra de 5 letras: ");
     scanf("%5s", palabra);
@@ -208,7 +193,7 @@ int main() {
     int margen_izquierdo = (anchura - palabra_length) / 2;
     int margen_derecho = anchura - margen_izquierdo - palabra_length;
 
-    // Dibujo del rectángulo
+    // Dibujo del rectï¿½ngulo
     for (int i = 0; i < altura; i++) {
         for (int j = 0; j < anchura; j++) {
             if (i == 0 || i == altura - 1 || j == 0 || j == anchura - 1) {
@@ -228,29 +213,55 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-8) Construir un programa que al recibir como dato un número de 4 dígitos, genere una
-impresión como la que se muestra a continuación:
-El número 6352:
-6
-3
-5
-2
+10) 
+int main(){
+	
+	int Num1=0,Num2=0,resultado1=0,resultado2=0,resultado3=0,resultadoFinal=0;
+	
+printf("Ingrese el Numero 1 a multiplicar: \n");
+fflush(stdin);
+scanf("%i",&Num1);
+printf("Ingrese el Numero 2 a multiplicar por el Numero 1: \n"),
+fflush(stdin);
+scanf("%i",&Num2);
 
-#include <stdio.h>
+resultado1=(Num2%10)*Num1;	
+resultado2=(Num2%100)*Num1;
+resultado3=(Num2%1000)*Num1;
+
+resultadoFinal=resultado1+resultado2+resultado3;
+	
+printf("\t%i \n",Num1);
+printf("x \t%i \n",Num2);
+printf("__________________\n");
+printf("\t%i\n",resultado1);
+printf("+ \t%i\n",resultado2);
+printf("+ \t%i\n",resultado3);	
+printf("__________________\n");
+printf("\t%i\n",resultadoFinal);	
+			
+	return 0;
+}
+
+
+/**********************************************************************************************************************************************/
+
+/*
+11) 
 
 int main() {
     int numero;
 
-    printf("Ingrese un número de 4 dígitos: ");
+    printf("Ingrese un nï¿½mero de 4 dï¿½gitos: ");
     scanf("%d", &numero);
 
-    // Obtener cada dígito del número
+    // Obtener cada dï¿½gito del nï¿½mero
     int digito1 = numero / 1000;
     int digito2 = (numero / 100) % 10;
     int digito3 = (numero / 10) % 10;
     int digito4 = numero % 10;
 
-    // Imprimir cada dígito en una línea separada
+    // Imprimir cada dï¿½gito en una lï¿½nea separada
     printf("%d\n", digito1);
     printf("%d\n", digito2);
     printf("%d\n", digito3);
@@ -262,11 +273,7 @@ int main() {
 /**********************************************************************************************************************************************/
 
 /*
-9) Escribir un programa que lea dos enteros en las variables X e Y, y a continuación obtenga los
-valores de: X / Y, y X % Y. Ejecute el programa varias veces con diferentes pares de enteros
-como entrada.
-
-#include <stdio.h>
+12) 
 
 int main() {
     int x, y;
@@ -280,7 +287,7 @@ int main() {
     int division = x / y;
     int modulo = x % y;
 
-    printf("División: %d\n", division);
+    printf("Divisiï¿½n: %d\n", division);
     printf("Residuo: %d\n", modulo);
 
     return 0;
@@ -288,5 +295,20 @@ int main() {
 
 /**********************************************************************************************************************************************/
 
+/*
+13) 
+int main(){
+//13)
+printf("\t   XXXX\n");
+printf("\tXX\n");
+printf("    XXX\n");
+printf("XXX\n");
+printf("    XXX\n");
+printf("\tXX\n");
+printf("\t   XXXX\n");	
+		
+	return 0;
+}
+*/
 
 }
